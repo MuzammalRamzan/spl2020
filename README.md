@@ -37,7 +37,9 @@ This repository contains code for managing SPL (Solana Program Library) tokens u
 
 ## Detailed Description
 
-The main code file `app.ts` performs the following tasks:
+The main code files `mint.ts` and `wallet.ts` perform the following tasks:
+
+### mint.ts
 
 1. Initializes connection to a local Solana node.
 2. Generates keys for payer, mint authority, and mint.
@@ -47,6 +49,12 @@ The main code file `app.ts` performs the following tasks:
 6. Defines mint amount and transfer amount, and calculates the fee for the transfer.
 7. Implements functions for airdrop, token creation, token minting, token transfer, fetching fee accounts, and harvesting fees.
 8. Generates Explorer URLs for transactions.
+
+### wallet.ts
+
+1. Initializes connection to a local Solana node.
+2. Generates a new Solana wallet.
+3. Converts the private key to Base58 and writes it to a JSON file.
 
 ## Additional Notes:
 
